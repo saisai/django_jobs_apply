@@ -15,9 +15,9 @@ class UserSerializer(serializers.Serializer):
 
     def validate(self, data):
         if data['password1'] != data['password2']: # Check if the 2 passwords match
-            #return Response({'serializer': "Passwords do not match"})
+            
             raise serializers.ValidationError("Passwords do not match")
-            #raise MyCustomExcpetion(detail={"Failure": "Passwords do not match"}, status_code=status.HTTP_400_BAD_REQUEST)
+            
         if CustomUser.objects.filter(email=data['email']).count() > 0:
             raise serializers.ValidationError("Email already exists")
         return data
@@ -33,7 +33,7 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         # Add extra responses here
         data['email'] = self.user.email
         data['id'] = self.user.id
-        #data['groups'] = self.user.groups.values_list('name', flat=True)
+        
         return data
 
 
@@ -108,17 +108,4 @@ class SelectedSerializer(serializers.ModelSerializer):
                 'interview_gone',       
                 'position_title'
                 )
-        #extra_kwargs = {'position_id': {'write_only': True}}
-    '''    
-    def update(self, instance, validated_data):
-        instance.title = validated_data.get('title', instance.title)
-        instance.email = validated_data.get('email', instance.email)
-        instance.link = validated_data.get('link', instance.link)
-        instance.companyinfo = validated_data.get('companyinfo', instance.companyinfo)
-        instance.qualification = validated_data.get('qualification', instance.qualification)
-        instance.responsibility = validated_data.get('responsibility', instance.responsibility)
-        instance.salary = validated_data.get('salary', instance.salary)
-        instance.position_id = validated_data.get('position_id', instance.position_id)
-        instance.save()
-        return instance
-    '''
+ 
