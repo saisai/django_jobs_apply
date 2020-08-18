@@ -97,9 +97,9 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default' : {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'jobs',
-        'USER': 'scrapyuser',
-        'PASSWORD': 'scrapypassword',
+        'NAME': 'test',
+        'USER': 'test',
+        'PASSWORD': 'test',
         'HOST': 'localhost',
         'PORT': '',
         },
@@ -166,12 +166,6 @@ CORS_ORIGIN_WHITELIST = (
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
-
-LOGIN_URL  = '/users/login/'
-
-
 #Handle session is not Json Serializable
 #SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 # Gmail settings
@@ -192,9 +186,6 @@ SITE_ID = 1
 
 #CELERY_BROKER_URL = 'redis://h:p35dfc08bb5d2a659e408bc61dec2d58d0ed77ae61b5cd60e30d48b43e7ff7944@ec2-3-222-186-102.compute-1.amazonaws.com:11459'
 #CELERY_BROKER_URL = 'amqp://localhost'
-
-
-
 
 CELERY_BROKER_URL = 'redis://localhost:6379'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379'
