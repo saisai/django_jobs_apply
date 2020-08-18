@@ -360,9 +360,7 @@
 </style>
   </head>
   <body class="">
-	{% comment %}
-    <span class="preheader">Applying for a job.</span>
-	{% endcomment %}
+	
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
       <tr>
         <td>&nbsp;</td>
@@ -378,100 +376,8 @@
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-						<div class="myheader">
-						<h2>Nyein Pe</h2>
-						<address>
-						7/46, Flat Bonkai, Building Kor.1,<br />
-						3rd Flr, Bonkai, Rama 4 Rd., Lumpini, <br />
-						Pathum Wan, Bangkok
-						</address>
-						<p>083 6969 423</p>
-						<p>hello@gmail.com</p>
-						</div>
-						<br />
-						<hr />
-						<div class="mydate">
-						<p><?php echo date("F d, Y") ?></p>
-						<p>{% now 'F d, Y' %}</p>
-						</div>
-						<br />
-						<div class="mybody">
-							<p>Dear Sir/Madam,</p>
-							<br />
-							<p class="p_line_height">
-							My name is Nyein Pe. You can call me Sai. I am from Myanmar.
-							</p>
-							<p class="p_line_height">I am writing to apply for the {{ position }} position advertised.<br />
-							I have included my resume if you do not mind for having a look on it.
-							</p>
-							
-							<p class="p_line_height">I have been working in Walen Education Co. Ltd since 2013 as a Web developer.<br/ >
-							I have a wide and practical knowledge of technologies: PHP, Python, Mysql, Postgresql ,Javascript, HTML and CSS.<br/ >
-							</p>
-							
-							<p>
-							I can manage web hostings like Amazon Web Services (AWS) and Vultr Global Cloud Hosting.
-							</p>
-								
-
-							<p>
-							If you do not mind, you can have a look at some websites I have done.<br/>							
-							</p>
-							
-							<p class="p_line_height">
-							<b>Website</b>: <a href="http://apply.nyeinpe.xyz/" target="_blank">apply.nyeinpe.xyz</a> <br />
-							<b>Web technologies used</b>: <b>For backend</b>: Python, Django Web Framework,  Django REST framework, Scrapy web-crawling framework, Celery, Postgresql<br />
-														  <b>For frontend</b>: Reactjs Bootstrap 4 css framework, Html, Css <br />
-							<b>Operating system</b>: Arch linux hosted on Vultr Global Cloud Hosting <br />		
-							<b>Web server</b>: Nginx <br />		
-							<b>How it works</b>: The Advertising jobs are collected by scrapy framework and <br />
-											     stored into the database. The djagno framework gets data from database and display data, select the job position.<br />
-												 The registration with valid email and confirmation email are required to apply for the job position selected.<br />
-												 Emailing the applying job is used by Python Celery for not disturbing the client.
-										  
-							<p>
-							{% comment %}
-							<p class="p_line_height">
-							<b>Website</b>: <a href="http://jobs.nyeinpe.xyz/" target="_blank">jobs.nyeinpe.xyz</a> <br />
-							<b>Web technologies used</b>: Python, Django Web Framework, Scrapy web-crawling framework, Celery, Postgresql, Bootstrap 4 css framework, Jquery, Html, Css<br />
-							<b>Operating system</b>: Arch linux hosted on Vultr Global Cloud Hosting <br />		
-							<b>Web server</b>: Nginx <br />		
-							<b>How it works</b>: The Advertising jobs are collected by scrapy framework and <br />
-											     stored into the database. The djagno framework gets data from database and display data, select the job position.<br />
-												 The registration with valid email and confirmation email are required to apply for the job position selected.<br />
-												 Emailing the applying job is used by Python Celery for not disturbing the client.
-										  
-							<p>
-							{% endcomment %}	
-
-							<p class="p_line_height">
-							<b>Website</b>: <a href="http://sms.nyeinpe.xyz/" target="_blank">sms.nyeinpe.xyz</a> <br />
-							<b>Web technologies used</b>: Python, Django Web Framework, Mysql, Bootstrap 4 css framework, Jquery, Html, Css<br />
-							<b>Operating system</b>: Arch linux hosted on Vultr Global Cloud Hosting <br />	
-							<b>Web server</b>: Nginx <br />								
-							<b>How it works</b>: The staff can add the student's data, update data, upload images and edit images.<br />
-										  
-							<p>
-														
-							<p class="p_line_height">
-							<b>Website</b>: <a href="https://sms.walen.org" target="_blank">sms.walen.org</a> <br />
-							<b>Web technologies used</b>: PHP, Mysql, Jquery, Html, Css<br />
-							<b>Operating system</b>: Ubuntu linux hosted on Amazon Web Services (AWS) <br />
-							<b>Web server</b>: Apache HTTP Server <br />
-							<b>How it works</b>: It is about recording data of the students, the payments, the courses.<br />
-							
-							<p>
-													
-							
-							<p class="p_line_height">Thank you for your time and consideration.<br />
-							I look forward to hearing from you soon.
-							</p>
-							
-							<br />
-							<p>Sincerely,</p>
-							<p>Nyein Pe	</p>
-						</div>					  
-						{% comment %}
+									  
+						
                         <p>Hi there, {{ news }}</p>
                         <p>Sometimes you just want to send a simple HTML email with a simple design and clear call to action. This is it.</p>
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
@@ -491,7 +397,7 @@
                         </table>
                         <p>This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
                         <p>Good luck! Hope it works.</p>
-						{% endcomment %}
+						
                       </td>
                     </tr>
                   </table>
